@@ -6,16 +6,19 @@ function setAttributes(el, attrs) { //function to set multiple attributes
       el.setAttribute(key, attrs[key]);
     }
   }
+  
 function createText(){
     const textToSend=document.getElementsByClassName("text")[0].value;
     
-
+if(textToSend==""){
+    console.log("no text in input");
+}else{
     //create element
-    
+
     const p=toCreateElement('p');
     const timeTag=toCreateElement('p');
     const img=toCreateElement('img');
-    
+
     //set attribute to p and img
     p.setAttribute('class','message');
     timeTag.setAttribute('class','time');
@@ -98,6 +101,7 @@ function createText(){
     }
        //function to remove text after sending
        removeText();
+}
  }
 
 
