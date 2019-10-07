@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* The device with borders */
+.smartphone {
+    position: relative;
+    width: 330px;
+    height: 540px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  }
+  
+  /* The horizontal line on the top of the device */
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  /* The circle on the bottom of the device */
+  .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+  
+  /* The screen (or content) of the device */
+  .smartphone .content {
+    width: 330px;
+    height: 540px;
+    position: relative;
+  }
+.message-content{
+    height: 455px;
+    overflow: auto;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    background:white;
+}
+.message-container{
+    height: 540px;
+    width: 330px;
+    margin: 0 auto;
+    margin-top: 70px;
+    position: absolute;
+    top: -70px;
+    left: 0;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background: rgb(146, 30, 146);
+}
+i.left{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    cursor: pointer;
+  }
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 7px;
+    left: 80px; 
+    position: absolute;
+}
+i.fa{
+    font-size: 20px;
+    color: rgb(226, 226, 226);
+}
+i.fa.fa-video-camera{
+    position: absolute;
+    top: 9px;
+    right: 14px;
+    font-size: 20px;
+    cursor: pointer;
+}
+i.fa.fa-phone{
+    position: absolute;
+    top: 9px;
+    right:48px;
+    cursor: pointer;
+}
+/* text input */
+.text-input{
+    position: absolute;
+    background:purple;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+}
+i.fa.fa-camera{
+    position: absolute;
+    top: 9px;
+    left: 13px;
+    font-size: 25px;
+    cursor: pointer;
+}
+i.fa.fa-microphone{
+    position: absolute;
+    top: 9px;
+    left: 60px;
+    font-size: 25px;
+    cursor: pointer;
+}
+i.fa.fa-image{
+    position: absolute;
+    top: 9px;
+    left: 95px;
+    font-size: 25px;
+    cursor: pointer;
+}
+i.fa.fa-send-o{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 27px;
+    color:yellow;
+    cursor: pointer;
+}
+i.fa.fa-send-o:hover{
+    transition-property: color;
+    transition-duration: 0.5s;
+    color:red;
+}
+input[type='text']{
+    width: 130px;
+    height: 25px;
+    border-radius: 7px;
+    position: absolute;
+    top: 7px;
+    font-size: 18px;
+    left: 140px;
+    /* font-family: sans-serif; */
+}
+.message{
+    background: rgb(172, 23, 209);
+    margin:10px 50px 10px 50px;
+    color: white;
+    border-radius: 7px 7px 0px 7px;
+    padding:5px 8px 5px 8px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    display:block;
+    text-align: justify;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.user-profile{
+    width: 35px;
+    height:35px;
+    float: right;
+    border-radius: 50px;
+    margin-top: -45px;
+    margin-right: 3px;
+}
+.pat-profile{
+    width: 35px;
+    height:35px;
+    float: left;
+    border-radius: 50px;
+    margin-top: -45px;
+    margin-left: 3px;
+}
+
+.pat-message{
+    background: rgb(145, 145, 145);
+    margin:10px 50px 10px 50px;
+    color: white;
+    border-radius: 7px 7px 7px 0px;
+    padding:5px 8px 5px 8px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    display:block;
+    text-align: justify;
+}
+.time{
+    float: right;
+    font-size: 10px;
+    padding-top: 10px;
+}
+
