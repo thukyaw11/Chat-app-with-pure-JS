@@ -52,7 +52,7 @@ if(textToSend==""){
     content.append(p,img);
 
     //partenar reply
-    const replyList=["Hi","Yeah everything is fine","I'm kinda messaging app created by Min Thu Kyaw","Thanks it gonna be secure your privacy.","As you wish I love you","Good night too","See you","Sorry! I can't catch your message"];
+    const replyList=["Hi","ဘာတုန်း","အဲတော့ငါကဘာလုပ်ပေးရမှာလဲ🤓","ဘာမှလုပ်မနေနဲ့တော့ အိပ်လိုက်တော့ မင်းပင်ပန်းနေပြီ😪","အိမ်မက်လှလှမက်ပါစေ","Yeah everything is fine","I'm kinda messaging app created by Min Thu Kyaw","Thanks it gonna be secure your privacy.","As you wish I love you","Good night too","See you","Sorry! I can't catch your message"];
     switch (textToSend){
         case 'Hi':
         case 'hi':
@@ -62,30 +62,43 @@ if(textToSend==""){
         case 'Hey':
             paternar_reply(0);
         break;
+        case 'ဟေ့ကောင်လေး':
+            paternar_reply(1);
+        break;
+        case 'ငါစာတွေမရဘူး':
+            paternar_reply(2);
+        break;
+        case 'အခုဘာလုပ်ရမလဲ':
+            paternar_reply(3);
+        break;
+        case 'အေးကွာ အဲတာဆိုအိပ်ပြီ':
+            paternar_reply(4);
+        break;
+
         case 'how are you today':
         case 'How are you today':
         case 'How are you':
         case 'how are you':
-            paternar_reply(1);
+            paternar_reply(5);
         break;
         case 'i don\'t know who are you':
         case 'who are you':
-            paternar_reply(2);
+            paternar_reply(6);
         break; 
         case 'Oh!! it\'s sound great':
-            paternar_reply(3);
+            paternar_reply(7);
         break;
         case 'So can you say i love you for me':
-            paternar_reply(4);
+            paternar_reply(8);
         break;
         case 'Oh you amaze me Ok good night':
-            paternar_reply(5);
+            paternar_reply(9);
         break;
         case 'See you tomorrow':
-            paternar_reply(6);
+            paternar_reply(10);
         break;
         default:
-            paternar_reply(7);
+            paternar_reply(11);
         break;
         
     }
