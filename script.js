@@ -71,7 +71,7 @@ if(textToSend==""){
         case 'အခုဘာလုပ်ရမလဲ':
             paternar_reply(3);
         break;
-        case 'အေးကွာ အဲတာဆိုအိပ်ပြီ':
+        case 'အေးကွာ အိပ်ပြီ':
             paternar_reply(4);
         break;
 
